@@ -1,4 +1,4 @@
-name: openvidu-classroom-tutorial-test 
+name: openvidu-classroom-demo-test 
 
 on: 
   workflow_dispatch: {}
