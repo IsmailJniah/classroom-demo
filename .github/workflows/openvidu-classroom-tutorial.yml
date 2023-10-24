@@ -29,7 +29,10 @@ jobs:
 
     - name: Instalar dependencias NPM del frontend
       working-directory: src/angular/frontend
-      run: npm install
+      run: |
+        npm install @angular/flex-layout@latest
+        npm install --force
+        npm install
 
     - name: Construir el frontend
       working-directory: src/angular/frontend
