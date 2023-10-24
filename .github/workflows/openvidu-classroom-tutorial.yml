@@ -28,11 +28,11 @@ jobs:
         docker run -p 4443:4443 --rm -e OPENVIDU_SECRET=MY_SECRET openvidu/openvidu-dev:2.28.0 &
 
     - name: Instalar dependencias NPM del frontend
-      working-directory: classroom-demo/src/angular/frontend
+      working-directory: src/angular/frontend
       run: npm install
 
     - name: Construir el frontend
-      working-directory: classroom-demo/src/angular/frontend
+      working-directory: src/angular/frontend
       run: ng build --output-path ../../main/resources/static &
 
     - name: Compilar y Ejecutar la aplicación Spring Boot
