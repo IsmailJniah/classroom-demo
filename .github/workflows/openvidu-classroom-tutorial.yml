@@ -29,7 +29,7 @@ jobs:
 
     - name: Instalar dependencias NPM del frontend
       run: |
-        cd classroom-demo/src/angular/frontend
+        cd src/angular/frontend
         npm install
 
     - name: Construir el frontend
