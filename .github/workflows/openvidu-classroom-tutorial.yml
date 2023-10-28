@@ -28,10 +28,9 @@ jobs:
         docker run -p 4443:4443 --rm -e OPENVIDU_SECRET=MY_SECRET openvidu/openvidu-dev:2.28.0 &
 
     - name: Instalar dependencias NPM del frontend
-      working-directory: src/angular/frontend
       run: |
-        npm install @angular/common@15.0.2
-        npm install --force
+        cd classroom-demo/src/angular/frontend
+        npm install
 
     - name: Construir el frontend
       working-directory: src/angular/frontend
