@@ -1,7 +1,6 @@
 name: openvidu-classroom-demo-test 
 
 on: 
-  workflow_dispatch: {}
   push:
 
 jobs:
